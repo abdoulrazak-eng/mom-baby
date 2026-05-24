@@ -1,0 +1,29 @@
+import Header from "@/components/Header";
+import Hero from "@/components/Hero";
+import Categories from "@/components/Categories";
+import FeaturedSection from "@/components/FeaturedSection";
+import Footer from "@/components/Footer";
+import { ProductGrid } from "@/components/ProductGrid";
+
+const Index = () => {
+  return (
+    <div className="min-h-screen bg-background">
+      <Header />
+      <main>
+        <Hero />
+        <section className="max-w-6xl mx-auto px-6 py-16">
+          <h2 className="text-3xl font-bold text-center mb-2">Shop Our Products</h2>
+          <p className="text-center text-muted-foreground mb-10">
+            Carefully chosen essentials for mom & baby
+          </p>
+          <ProductGrid first={8} />
+        </section>
+        <Categories />
+        <FeaturedSection />
+      </main>
+      <Footer />
+    </div>
+  );
+};
+
+export default Index;

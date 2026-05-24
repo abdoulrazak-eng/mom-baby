@@ -1,0 +1,30 @@
+import Header from "@/components/Header";
+import Footer from "@/components/Footer";
+
+const About = () => {
+  return (
+    <div className="min-h-screen bg-background">
+      <Header />
+      <main className="max-w-3xl mx-auto px-6 py-16">
+        <h1 className="text-4xl font-bold mb-6">About Us</h1>
+        <div className="prose prose-lg space-y-4 text-foreground">
+          <p>
+            Welcome to Mom & Baby Store — your trusted destination for everything you need
+            during the beautiful journey of motherhood and the early years of your baby's life.
+          </p>
+          <p>
+            We carefully select every product to ensure safety, quality, and comfort. From
+            essentials and clothing to toys and mom-care, we're here to support your family
+            with love.
+          </p>
+          <p>
+            Our mission is simple: make parenting a little easier and a lot more joyful.
+          </p>
+        </div>
+      </main>
+      <Footer />
+    </div>
+  );
+};
+
+export default About;
